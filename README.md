@@ -83,6 +83,7 @@ python3 -m venv venv
 source venv/bin/activate
 Install dependencies:Bashpip install -r requirements.txt
 Launch AeroFlow Studio:Bashstreamlit run app/app.py
+
 📂 Project Directory Structurerealtime-airfoil-cfd/
 ├── app/
 │   ├── app.py                # Main Streamlit UI & Interactive Dashboard
@@ -97,4 +98,5 @@ Launch AeroFlow Studio:Bashstreamlit run app/app.py
 │       └── surrogate_model.pth # Trained PyTorch Model Weights
 ├── README.md                 # Project Documentation
 └── requirements.txt          # Python Dependencies
+
 📜 LicenseDistributed under the MIT License. See LICENSE for more information.
