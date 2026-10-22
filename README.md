@@ -6,6 +6,9 @@
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-Case_Generator-00599C?logo=openfoam&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+<img width="1791" height="918" alt="Neural CFD Engine" src="https://github.com/user-attachments/assets/e977e09f-1da9-4f5c-92c0-f52f1f57fb3f" />
+
+
 **AeroFlow Studio** is an interactive, deep-learning-accelerated fluid dynamics engine designed to bridge the gap between rapid conceptual aerodynamic exploration and industrial-grade CFD validation.
 
 By leveraging a custom **PyTorch Neural Surrogate Model**, AeroFlow Studio predicts 2D airfoil pressure distributions ($C_P$), Lift ($C_L$), and Drag ($C_D$) polars in **< 10 ms**—achieving over a **1,000× speedup** compared to standard steady RANS finite-volume solvers.
