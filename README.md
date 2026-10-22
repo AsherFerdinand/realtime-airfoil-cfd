@@ -6,6 +6,8 @@
 ![OpenFOAM](https://img.shields.io/badge/OpenFOAM-Case_Generator-00599C?logo=openfoam&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+<img width="1120" height="640" alt="Angle of Attack" src="https://github.com/user-attachments/assets/0d0ae686-89eb-4ed8-af9d-3e6801a06f25" />
+
 <img width="1791" height="918" alt="Neural CFD Engine" src="https://github.com/user-attachments/assets/e977e09f-1da9-4f5c-92c0-f52f1f57fb3f" />
 
 
