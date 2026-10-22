@@ -70,6 +70,7 @@ flowchart TD
     style OFGen fill:#0f172a,stroke:#ff4757,stroke-width:2px,color:#fff
     style Viz fill:#1e293b,stroke:#38bdf8,stroke-width:1px,color:#fff
     style Case fill:#1e293b,stroke:#ff4757,stroke-width:1px,color:#fff
+```
 
 🛠️ Industrial & Lab Software IntegrationAeroFlow Studio is designed to complement standard industrial CFD workflows used across European automotive and aerospace engineering sectors:ToolRole in WorkflowPyTorch (AeroFlow Studio)Conceptual design & instantaneous geometry optimization loopOpenFOAM / simpleFoamHigh-fidelity finite-volume validation for exported case packagesKitware ParaViewPost-processing, velocity streamline plotting, and flow cutplane visualizationXFLR5 / XFOILBaseline 2D panel method aerodynamic polar validation🚀 Quick Start & InstallationPrerequisitesPython 3.10 or higherGitLocal SetupClone the repository:Bashgit clone [https://github.com/YOUR_USERNAME/realtime-airfoil-cfd.git](https://github.com/YOUR_USERNAME/realtime-airfoil-cfd.git)
 cd realtime-airfoil-cfd
