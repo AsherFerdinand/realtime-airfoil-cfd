@@ -10,6 +10,11 @@
 
 <img width="1791" height="918" alt="Neural CFD Engine" src="https://github.com/user-attachments/assets/e977e09f-1da9-4f5c-92c0-f52f1f57fb3f" />
 
+<img width="1752" height="901" alt="Venturi Tube" src="https://github.com/user-attachments/assets/b5e41d96-8de6-4936-aa05-d09b503356b3" />
+
+<img width="1486" height="762" alt="Realtime Fluid 2" src="https://github.com/user-attachments/assets/164739e1-abb1-4c2b-9fe5-1a99e7edc71a" />
+
+
 
 **AeroFlow Studio** is an interactive, deep-learning-accelerated fluid dynamics engine designed to bridge the gap between rapid conceptual aerodynamic exploration and industrial-grade CFD validation.
 
