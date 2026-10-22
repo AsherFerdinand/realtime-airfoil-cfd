@@ -53,27 +53,24 @@ By leveraging a custom **PyTorch Neural Surrogate Model**, AeroFlow Studio predi
 ## 🏗️ System Workflow & Architecture
 
 ```mermaid
-graph TD
-    %% Node Definitions
-    UI["💻 AeroFlow Studio UI<br/>(Streamlit Engine)"]
-    Model["🧠 PyTorch AI Surrogate Model<br/>(3-Layer MLP Feature Vector)"]
-    OFGen["📦 OpenFOAM Case Generator<br/>(In-Memory Zip Compiler)"]
-    Viz["📊 Realtime Pressure & Polars Viz<br/>(Matplotlib Dark / Plotly 3D)"]
-    Case["📂 Executable OpenFOAM Case (.zip)<br/>(simpleFoam / ParaView Ready)"]
+flowchart TD
+    UI["AeroFlow Studio UI (Streamlit)"]
+    Model["PyTorch AI Surrogate Model"]
+    OFGen["OpenFOAM Case Generator"]
+    Viz["Realtime Pressure and Polars Viz"]
+    Case["Executable OpenFOAM Case Archive"]
 
-    %% Flow Connections
-    UI -->|"Airfoil Parameters & AoA (α)"| Model
-    UI -->|"Trigger Export"| OFGen
+    UI -->|Airfoil Parameters and AoA| Model
+    UI -->|Trigger Export| OFGen
+    Model -->|Predicted Cp, CL, CD| Viz
+    OFGen -->|Generate Mesh and Control Dicts| Case
 
-    Model -->|"Predicted Cp, CL, CD"| Viz
-    OFGen -->|"Generate Mesh, Boundary & Control Dicts"| Case
-
-    %% Styling
     style UI fill:#1e293b,stroke:#ff7e00,stroke-width:2px,color:#fff
     style Model fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff
     style OFGen fill:#0f172a,stroke:#ff4757,stroke-width:2px,color:#fff
     style Viz fill:#1e293b,stroke:#38bdf8,stroke-width:1px,color:#fff
     style Case fill:#1e293b,stroke:#ff4757,stroke-width:1px,color:#fff
+
 🛠️ Industrial & Lab Software IntegrationAeroFlow Studio is designed to complement standard industrial CFD workflows used across European automotive and aerospace engineering sectors:ToolRole in WorkflowPyTorch (AeroFlow Studio)Conceptual design & instantaneous geometry optimization loopOpenFOAM / simpleFoamHigh-fidelity finite-volume validation for exported case packagesKitware ParaViewPost-processing, velocity streamline plotting, and flow cutplane visualizationXFLR5 / XFOILBaseline 2D panel method aerodynamic polar validation🚀 Quick Start & InstallationPrerequisitesPython 3.10 or higherGitLocal SetupClone the repository:Bashgit clone [https://github.com/YOUR_USERNAME/realtime-airfoil-cfd.git](https://github.com/YOUR_USERNAME/realtime-airfoil-cfd.git)
 cd realtime-airfoil-cfd
 Create and activate a virtual environment:Bash# Windows (PowerShell)
